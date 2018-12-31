@@ -1,10 +1,17 @@
 module.exports = {
+  pathPrefix: "/daily-culling",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Daily Culling`,
+    description: `We all have things we can get rid of to make a better life. Why not make that part of your daily routine?`,
+    author: `@nohorse`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

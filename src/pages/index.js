@@ -8,13 +8,8 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <iframe class="airtable-embed" src="https://airtable.com/embed/shr01iPgN2PMHLuEy?backgroundColor=red" 
+    frameborder="0" onmousewheel="" width="800" height="888" styles="background: transparent; border: 1px solid #ccc;"></iframe>
   </Layout>
 )
 
